@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <title>signup</title>
+</head>
+<style>
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(180deg, #FFFFFF 0%, #F9F5F2 100%);
+    }
+</style>
+
+<body>
+    <!-- nav start -->
+    <nav>
+        <div class="flex flex-row justify-between px-4 py-1">
+            <div class="flex flex-row items-center">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                <img class="w-24" src="img/logo.svg" alt="">
+            </div>
+            <div class="flex flex-row items-center gap-4 mr-32">
+                <div class="flex items-center gap-3">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-[#497174] ring-1 ring-black">
+                        <h1 class="text-2xl font-semibold">1</h1>
+                    </div>
+                    <h1 class="font-semibold">Welcome</h1>
+                </div>
+                <hr class="border-none h-1 bg-[#BFB9B9] w-8">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-16 h-16 flex items-center justify-center rounded-full bg-[#497174] ring-1 ring-[#BFB9B9]">
+                        <h1 class="text-2xl text-[#BFB9B9] font-semibold">2</h1>
+                    </div>
+                    <h1 class="text-[#BFB9B9] font-semibold">About You</h1>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <form x-on:submit="handleSubmit" 
+        x-data="{ 
+                    email: '',
+                    isValidEmail: false,
+                    invalid: false,
+                    incomplete: false,
+                }" method="POST">
+        <div x-show="invalid" class="fixed top-0 left-0 right-0 h-36 bg-white z-50" x-transition x-cloak>
+            <div class="flex flex-col px-12 pt-4 pb-2">
+                <h2 class="text-3xl font-bold text-[#FE4A4A]">
+                    Data is Invalid
+                </h2>
+                <p class="text-lg font-medium">Click OK to continue</p>
+                <p class="ml-auto mt-4 px-8 py-0.5 border-2 shadow-xl border-b-4 border-b-slate-300 hove:brightness-75 cursor-pointer"
+                    @click="invalid=false">
+                    Ok
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <div class="flex flex-col mt-32 items-center text-center gap-12 justify-center">
+                <h1 class="text-5xl">EXPLORE THE INFINITE WARDROBE</h1>
+                <p class="text-[#BFB9B9] text-4xl w-[660px]">Get your voucher code and see styles picked for you.</p>
+            </div>
+
+            <input
+                class="w-[1259px] h-[102px] mt-12 ring-1 focus:outline-none border-trans ring-black bg-white text-[#BFB9B9] placeholder:text-[#BFB9B9] text-3xl pl-8"
+                placeholder="EMAIL ADDRESS" type="text" name="email" id="email" x-model="email"
+                x-on:input="isValidEmail = email.trim() !== '' && email.includes('@')">
+            <div class="flex flex-row justify-center mt-16">
+                <button type="submit"
+                    class="w-[510px] h-[82px] hover:opacity-80 bg-black text-3xl flex justify-center text-white items-center">
+                    NEXT
+                </button>
+            </div>
+    </form>
+    <a class="text-[#8A8787] mt-32 text-3xl hover:underline" href="">ALREADY HAVE AN ACCOUNT? SIGN IN HERE</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.js" defer></script>
+
+    <script>
+        function handleSubmit(event) {
+            const isValid =
+                this.isValidEmail;
+            if (!isValid) {
+                this.invalid = true;
+                event.preventDefault();
+            } else {
+                const formElement = event.target.closest("form");
+
+                <!-- !Define where the data will be send here -->
+                formElement.action = "/OwnerAccount";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

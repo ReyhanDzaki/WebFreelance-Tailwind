@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ConfirmEmail</title>
+    <style>
+        .image {
+            width: 100%;
+            height: 100vh;
+            background-image: url("/images/bg-suc.jpg");
+            /* ini buat image email */
+            background-size: cover;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+            z-index: 10;
+      
+        }
+
+        .image-overlay {
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(60, 85, 52, 0.5);
+            z-index: 20;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image z-10">
+        <div style="opacity: 1;" class="image-overlay z-20 flex justify-center items-center">
+
+            <div style="opacity: 1;" class="w-[638px]  h-[728px] drop-shadow-2xl shadow-2xl rounded-xl z-30 m-auto bg-[#E4C56B]">
+                <div class="flex flex-col gap-[42px] mt-[158px] items-center">
+                    <h1 class="text-6xl text-white font-bold">Check Your Mail</h1>
+                    <img src="images/Successmark.svg" alt="">
+                    <p class="font-medium w-[452px] text-center">We have sent a password recover instructions
+                    to your email</p>
+                </div>
+                <div class="text-white flex justify-end mt-[145px] mr-10">
+                <p class="text-white">Did not receive the email? <a class="font-semibold underline" href="">Resend</a></p> 
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

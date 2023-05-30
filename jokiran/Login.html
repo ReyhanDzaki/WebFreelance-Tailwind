@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign in</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-blackoverflow-hidden h-screen overflow-hidden">
+    <nav>
+        <div class="navbar">
+            <div class="">
+                <div class="container  nav-container">
+                    <input class="checkbox" type="checkbox" name="" id="" />
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="logo">
+                        <img class="w-12" src="images/logo-singin.svg" alt="">
+                    </div>
+                    <div class="menu-items h-screen relative overflow-visible">
+                        <div class="flex flex-row ">
+                            <div class=" relative w-full">
+                                <div class=" mt-12">
+                                    <div class="relative flex ml-12 justify-center">
+                                        <input
+                                            class="w-[900px]  text-3xl h-[102px] rounded-full bg-[#e4e4e4] text-[#565656] font-bold pl-4 focus:outline-0 placeholder:text-[#565656]"
+                                            placeholder="Search by product, category,  size, etc." type="text">
+                                        <i class="fa fa-search fa-2x absolute right-28 bottom-9" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="flex flex-col gap-[78px]">
+                                        <a class="text-semibold text-" href=""></a>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex font-bold text-left mt-12  items-start ml-20  justify-center text-[#565656] flex-col gap-[78px]">
+                                    <div class="flex flex-col gap-[30px] justify-start text-left text-3xl">
+                                        <div>
+                                            <h1>Home</h1>
+                                        </div>
+                                        <div>
+                                            <h1>My Purchases</h1>
+                                        </div>
+                                        <div>
+                                            <h1>FAQ</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-auto">
+                                    <button
+                                        class="bg-[#497174] mt-[200px] w-[333px] text-white text-4xl font-semibold h-[85px]">
+                                        SIGN IN
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="logo flex ml-[780px] fill-[#4a7174]">
+                                    <img class="w-20" src="images/logo-side.svg" alt="">
+                                </div>
+                                <img class="absolute top-0 right-0 w-[40%]" src="images/sidebar.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="flex  flex-row">
+        <div class="w-full">
+            <img src="images/bg-signin.jpg" alt="">
+        </div>
+        <div class="w-full h-screen bg-[#fbf8f6]">
+            <div class=" h-screen ml-[71px]  ">
+                <div class="flex gap-[30px] z-0  h-screen justify-center flex-col pb-1">
+                    <h1 class="text-3xl font-semibold  text-[#050505]">
+                        Welcome Back!
+                    </h1>
+                    <div style="font-family: 'Montserrat', sans-serif;" class="flex flex-col gap-[39px]">
+                        <div>
+                            <input type="text" name="" id="" placeholder="EMAIL"
+                                class="w-[594px] h-[88px] placeholder:text-black text-black pl-12 text-3xl font-light bg-white ring-1 ring-black focus:outline-0">
+                        </div>
+                        <div>
+                            <input type="password" name="" id="" placeholder="PASSWORD"
+                                class="w-[594px] h-[88px] placeholder:text-black text-black pl-12 text-3xl font-light bg-white ring-1 ring-black focus:outline-0">
+                        </div>
+                        <a class="flex justify-end  mr-52" href="">Forgot your password?</a>
+                    </div>
+                    <button class="w-[594px] h-[49px] bg-black text-white font-bold text-lg">
+                        SIGN IN
+                    </button>
+                    <div class="text-[#565656] text-[25px]">
+                        <p>Haven’t made an account? <a href="">Create an account here!</a></p>
+                        <div class="flex flex-row justify-end mr-48 z-0 ">
+                            <a href="">
+                                <img class="w-[80px]" src="images/bubble-chat.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

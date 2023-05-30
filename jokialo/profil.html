@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Our Service</title>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;" class="bg-[#F2F2F2]">
+    <div class="mx-[234px] my-[90px]">
+        <div class="flex flex-row gap-[134px]">
+            <div class="flex justify-center items-center mb-24">
+                <div class="w-[237px] h-[237px] relative">
+                    <img id="img-preview" src="img/placeholder.png" class="w-[237px] rounded-full h-[237px]" src="" alt="">
+                    <input id='image' class="rounded-full" type='file' name='image' onchange="loadFile(event)" hidden />
+                    <button class="text-white mb-2 rounded-full absolute bottom-2 right-2 space-x-4" id='buttonid' type='button' value=''
+                        href=""><img class="rounded-full" src="img/cam.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="flex gap-11 flex-col">
+                <div class="flex gap-3 flex-col">
+                    <label class="ml-4 font-semibold text-sm text-black" for="Full Name">Full Name</label>
+                    <div class="w-[553px] h-[50px] relative">
+                        <input class="w-[553px] pr-10 h-[50px] shadow-md pl-4 shadow-black rounded-xl" type="text"
+                            placeholder="Masukkan nama anda" name="" id="">
+                        <img class="absolute bottom-[26%] right-4" src="img/Edit.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-col">
+                    <label class="ml-4 font-semibold text-sm text-black" for="email">Email</label>
+                    <div class="w-[553px] h-[50px] relative">
+                        <input class="w-[553px] pr-10 h-[50px] shadow-md pl-4 shadow-black rounded-xl" type="email"
+                            placeholder="Masukkan email anda" name="" id="">
+                        <img class="absolute bottom-[26%] right-4" src="img/Edit.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-col">
+                    <label class="ml-4 font-semibold text-sm text-black" for="nrp">NRP</label>
+                    <div class="w-[553px] h-[50px] relative">
+                        <input class="w-[553px] pr-10 h-[50px] shadow-md pl-4 shadow-black rounded-xl" type="text"
+                            placeholder="Masukkan NRP anda" name="" id="">
+                        <img class="absolute bottom-[26%] right-4" src="img/Edit.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-col">
+                    <label class="ml-4 font-semibold text-sm text-black" for="nrp">Date of Birth</label>
+                    <div class="w-[553px] h-[50px] relative">
+                        <input
+                            class="w-[553px] pr-4 h-[50px] appearance-none shadow-md text-[##9ca3af] pl-4 shadow-black rounded-xl"
+                            type="date" placeholder="Masukkan tanggal lahir anda" name="" id="">
+                    </div>
+                </div>
+                <div class="flex gap-3 flex-col">
+                    <label class="ml-4 font-semibold text-sm text-black" for="pass">Password</label>
+                    <div class="w-[553px] h-[50px] relative">
+                        <input class="w-[553px] pr-10 h-[50px] shadow-md pl-4 shadow-black rounded-xl" type="password"
+                            placeholder="••••••••••" name="" id="">
+                        <img class="absolute bottom-[26%] right-4" src="img/Edit.svg" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-row justify-center">
+                    <a href="">
+                        <div
+                            class="w-[193px] flex justify-center font-light items-center text-white rounded-[25px] bg-[#FABB5A] h-[54px]">
+                            <h1>Edit</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('buttonid').addEventListener('click', openDialog);
+
+        function openDialog() {
+            document.getElementById('image').click();
+        }
+
+
+
+        let loadFile = function (e) {
+            let image = document.getElementById('img-preview');
+            image.src = URL.createObjectURL(e.target.files[0]);
+        }
+
+    </script>
+</body>
+
+</html>
