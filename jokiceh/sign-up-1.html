@@ -25,6 +25,10 @@
         height: 100vh;
         background: linear-gradient(180deg, #FFFFFF 0%, #F9F5F2 100%);
     }
+      .form-container {
+        width: 80%;
+        margin: 0 auto;
+    }
 </style>
 
 <body>
@@ -61,7 +65,8 @@
                     isValidEmail: false,
                     invalid: false,
                     incomplete: false,
-                }" method="POST">
+                }" method="POST"
+                class="form-container">
         <div x-show="invalid" class="fixed top-0 left-0 right-0 h-36 bg-white z-50" x-transition x-cloak>
             <div class="flex flex-col px-12 pt-4 pb-2">
                 <h2 class="text-3xl font-bold text-[#FE4A4A]">
