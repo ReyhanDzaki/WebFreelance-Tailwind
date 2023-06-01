@@ -10,14 +10,26 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/cormorant-2" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Our Service</title>
 </head>
 
+<style>
+    .font-cormorant {
+        font-family: 'Cormorant', sans-serif;
+    }
+
+    .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+
+    }
+</style>
+
 <body class="bg-[#023A15]">
     <nav class="flex flex-wrap items-center justify-between py-4">
         <div class="ml-24">
-            <img src="logotal.svg" alt="">
+            <img src="images/logo.svg" alt="">
         </div>
 
         <div class="flex gap-[70px] text-white">
@@ -38,107 +50,111 @@
             </div>
         </div>
     </nav>
-    <div style="font-family: 'Cormorant', sans-serif;"
-        class="text-6xl text-white flex justify-center items-center mt-[118px] pb-24">
-        <h1 class="z-20 absolute">Our Service</h1>
-        <img class="relative z-10 left-14 w-48" src="nyiksa.svg" alt="">
+    <!-- start content -->
+
+    <div class="flex justify-center items-center my-32 relative text-6xl w-full h-full font-cormorant">
+        <h1 class="text-white relative z-10">Shopping Bag</h1>
+        <img class="absolute w-64 z-0 right-[45%]" src="images/circ.svg" alt="">
     </div>
-    <div class="bg-[#FDF5F3] text-[#023A15] px-[128px]">
-        <div style="font-family: 'Cormorant', sans-serif;" class="text-6xl flex justify-center items-center mt-12">
-            <h1 class="z-20 absolute">Special Service from Beautifs</h1>
-            <img class="relative z-10 left-[246px] w-60 h-64" src="nyiksa.svg" alt="">
-        </div>
-        <div class="flex justify-center mx-auto w-[565px] text-[#567C49] -mt-12 text-center">
-            <p style="font-family: 'Montserrat', sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Proin lobortis sed sapien in pretium. Donec tincidunt, quam.</p>
-        </div>
-        <div class="flex flex-row justify-center gap-20 mt-20">
-            <div class="w-[406px]">
-                <img class="w-[406px] h-[475px] z-10 rounded-t-full"
-                    src="https://img.freepik.com/premium-photo/good-looking-hipster-young-bearded-man-visiting-hairstylist-barber-shop_473712-4586.jpg"
-                    alt="">
-                <div class="w-[362px] z-20 -translate-y-10 mx-auto h-[206px] bg-white">
-                    <h1 style="font-family: 'Cormorant', sans-serif;"
-                        class="text-[#023A15] font-light pt-3 mb-4 flex justify-center text-5xl z-20">Haircut</h1>
-                    <p style="font-family: 'Montserrat', sans-serif;" class="text-[#567C49] flex justify-center">
-                        Potongan Sesuai Keinginan</p>
-                    <a href=""
-                        class="flex text-[#319E48] font-semibold underline underline-offset-2 justify-center mt-12">LEARN MORE ‎<i class="fa-solid fa-arrow-right flex items-center"></i></a>
-                </div>
+    <!-- 2nd content -->
+    <div class=" px-[130px] bg-[#FDF5F3] py-12">
+        <div class="flex flex-row">
+        <div class="flex flex-col">
+            <div class="flex flex-row items-center gap-2">
+                <img class="w-6 h-6" src="images/bag.svg" alt="">
+                <h1 class="font-cormorant text-[#023A15] text-2xl font-semibold">Bag</h1>
             </div>
-            <div class="w-[406px]">
-                <img class="w-[406px] h-[475px] z-10 rounded-t-full"
-                    src="https://img.freepik.com/premium-photo/good-looking-hipster-young-bearded-man-visiting-hairstylist-barber-shop_473712-4586.jpg"
-                    alt="">
-                <div class="w-[362px] z-20 -translate-y-10 mx-auto h-[206px] bg-white">
-                    <h1 style="font-family: 'Cormorant', sans-serif;"
-                        class="text-[#023A15] font-light pt-3 mb-4 flex justify-center text-5xl z-20">Haircut</h1>
-                    <p style="font-family: 'Montserrat', sans-serif;" class="text-[#567C49] flex justify-center">
-                        Potongan Sesuai Keinginan</p>
-                    <a href=""
-                        class="flex text-[#319E48] font-semibold underline underline-offset-2 justify-center  mt-12">LEARN MORE ‎<i class="fa-solid fa-arrow-right flex items-center"></i></a>
+            <div class="flex flex-row gap-12">
+                <div class="relative">
+                    <img class="w-64 rounded-t-full" src="images/details.png" alt="">
+                    <div
+                        class="w-60 h-12 bg-white mx-auto flex justify-center items-center font-cormorant text-[#023A15] -translate-y-4">
+                        <h1 class="text-2xl">Face Srub</h1>
+                    </div>
+                    <a href="">
+                        <div
+                            class="font-montserrat w-14 h-14 flex justify-center items-center rounded-full bg-[#023A15] text-2xl font-semibold text-white absolute top-0 right-0">
+                            X
+                        </div>
+                    </a>
                 </div>
-            </div>
-            <div class="w-[406px]">
-                <img class="w-[406px] h-[475px] z-10 rounded-t-full"
-                    src="https://img.freepik.com/premium-photo/good-looking-hipster-young-bearded-man-visiting-hairstylist-barber-shop_473712-4586.jpg"
-                    alt="">
-                <div class="w-[362px] z-20 -translate-y-10 mx-auto h-[206px] bg-white">
-                    <h1 style="font-family: 'Cormorant', sans-serif;"
-                        class="text-[#023A15] font-light pt-3 mb-4 flex justify-center text-5xl z-20">Haircut</h1>
-                    <p style="font-family: 'Montserrat', sans-serif;" class="text-[#567C49] flex justify-center">
-                        Potongan Sesuai Keinginan</p>
-                    <a href=""
-                        class="flex text-[#319E48] font-semibold underline underline-offset-2 justify-center  mt-12">LEARN MORE ‎<i class="fa-solid fa-arrow-right flex items-center"></i></a>
+                <div class="relative">
+                    <img class="w-64 rounded-t-full" src="images/cares.png" alt="">
+                    <div
+                        class="w-60 h-12 bg-white mx-auto flex justify-center items-center font-cormorant text-[#023A15] -translate-y-7">
+                        <h1 class="text-2xl">Mask</h1>
+                    </div>
+                    <a href="">
+                        <div
+                            class="font-montserrat w-14 h-14 flex justify-center items-center rounded-full bg-[#023A15] text-2xl font-semibold text-white absolute top-0 right-0">
+                            X
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="w-full relative flex text-white flex-row">
-        <img class="w-1/2 h-[1062px]"
-            src="https://cdn.popbela.com/content-images/post/20180926/selfie-7-4b13ba115dee79800ebc82bffd5dc931.jpg"
-            alt="">
-        <div class="flex mx-[129px] justify-evenly flex-col">
-            <h1 class="text-[80px] mt-12  text-white" style="font-family: 'Cormorant', sans-serif;"> Review From Our
-                Customer
-            </h1>
-            <img class="mr-auto" src="nyiksa2.svg" alt="">
-            <div>
-                <p style="font-family: 'Montserrat', sans-serif;" class="text-white text-lg">“Saya mengambil hair cut.
-                    hasil hair cut sangat memuaskan, sesuai dengan keinginan saya.”</p>
-            </div>
-            <div class="flex place-content-between flex-row ">
-                <div class="">
-                    <h1 style="font-family: 'Cormorant', sans-serif;" class="text-2xl">Joko wiiiiii</h1>
-                    <p style="font-family: 'Montserrat', sans-serif;">Customer</p>
+                <div>
                 </div>
-                <div class="flex flex-row  gap-4">
-                    <!-- ini mau di next ya cuman gw statis aja ya ga carousel saran ilangin aja atau ga klo mau nambah ya gpp-->
-                    <button>
-                        <svg width="64" height="20" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M64 9.83887L1 9.83887" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                            <path d="M10 0.936243L0.999999 9.83897L10 18.7417" stroke="white" stroke-width="2"
-                                stroke-miterlimit="10" stroke-linejoin="bevel" />
-                        </svg>
-                    </button>
-                    <button class="rotate-180">
-                        <svg width="64" height="20" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M64 9.83887L1 9.83887" stroke="white" stroke-width="2" stroke-miterlimit="10" />
-                            <path d="M10 0.936243L0.999999 9.83897L10 18.7417" stroke="white" stroke-width="2"
-                                stroke-miterlimit="10" stroke-linejoin="bevel" />
-                        </svg>
-                    </button>
+                <div class="flex flex-col font-montserrat justify-center mx-4 items-center gap-3">
+                    <i class="fa fa-plus fa-2xl text-[#023A15]"></i>
+                    <p class="text-[#567C49] text-xl">Add Cart</p>
+                </div>
+                <div>
+                    <div class="flex flex-col">
+                        <h1 class="font-cormorant text-[#023A15] text-xl">Order Summary</h1>
+                        <hr class="outline-none  w-96 bg-[#023A15]">
+                        <div class="flex flex-row font-montserrat my-2 justify-between text-[#567C49]">
+                            <p class="w-28">Fase Scrub</p>
+                            <p>RP 289.000,00</p>
+                        </div>
+                        <div class="flex flex-row font-montserrat my-2 justify-between text-[#567C49]">
+                            <p class="w-28">Botox Filler</p>
+                            <p>RP 988.000,00</p>
+                        </div>
+                        <div class="flex flex-row font-montserrat my-2 justify-between text-[#567C49]">
+                            <p class="w-28">Fase Scrub</p>
+                            <p>RP 37.000,00</p>
+                        </div>
+                        <hr class="outline-none  w-96 bg-[#023A15]">
+                        <div class="flex flex-row font-montserrat my-2 justify-between text-[#567C49]">
+                            <p class="w-28">Total</p>
+                            <p>RP 1.314.000,00</p>
+                        </div>
+                        <div class="flex flex-col gap-3 items-center justify-center">
+                            <div class="font-montserrat my-2 text-[#567C49]">
+                                <h1>Payments</h1>
+                            </div>
+                            <a href="">
+                                <div class="w-80 h-11 bg-[#023A15] font-montserrat font-medium uppercase hover:opacity-80 rounded-full text-white flex justify-center items-center">
+                                    DEBIT CARD
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="w-80 h-11 bg-[#023A15] font-montserrat font-medium uppercase hover:opacity-80 rounded-full text-white flex justify-center items-center">
+                                    CREDIT CARD
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="w-80 h-11 bg-[#023A15] font-montserrat font-medium uppercase hover:opacity-80 rounded-full text-white flex justify-center items-center">
+                                    OFFLINE PAYMENT
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="absolute -bottom-[1px] left-[41%]">
-            <svg width="297" height="147" viewBox="0 0 297 147" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M0.0675959 146.252C0.678096 65.5815 66.838 0.308086 148.304 0.278493C229.769 0.2489 295.864 65.4482 296.329 146.17L0.0675959 146.252Z"
-                    fill="#567C49" />
-            </svg>
+        </div>
+        <div class="font-cormorant flex items-center relative text-[#023A15]">
+            <p class="text-2xl">tell us where is your</p>
+            <h1 class="text-4xl relative z-10 ml-9">LOCATION</h1>
+            <img class="w-48 absolute h-40 z-0 right-[67%]" src="images/circ.svg" alt="">
         </div>
     </div>
+    <div>
+        <a href="https://www.google.com/maps/place/Sepuluh+Nopember+Institute+of+Technology/@-7.2823507,112.7923504,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7fa1323221a93:0x306c3c99adedb258!8m2!3d-7.282356!4d112.7949253!16zL20vMDRndng5?entry=ttu">
+        <img src="images/map.png" alt="">
+        </a>
+    </div>
+    <!-- end content -->
     <div class="flex flex-col py-20 items-center justify-center bg-[#3c634a] gap-[62px]">
         <div class=" relative">
             <h1 class="text-white text-6xl  text-center w-[896px]" style="font-family: 'Cormorant', sans-serif;">
@@ -161,7 +177,7 @@
     <footer style="font-family: 'Montserrat', sans-serif;"
         class="mt-12 text-white content-start mx-[214px] bg-[#023A15]">
         <div class="flex flex-col">
-            <img class="w-[285px]" src="logotal.svg" alt="">
+            <img class="w-[285px]" src="images/logo.svg" alt="">
 
             <div class="flex mt-4 flex-row gap-[145px]">
                 <div class="flex flex-col gap-[50px] w-[476px]">
@@ -181,7 +197,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="17.8651" cy="17.5976" r="17.5976" fill="white" />
                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.0178 18.2037V13..8468 13.9784 19.2634 14.797 20.9388 15.6795C19.557 16.434 17.8468 17.2806 16.0178 18.2037ZM26.211 10.6082C25.8955 10.1989 25.3578 9.88034 24.7853 9.77487C23.1026 9.46026 12.6048 9.45936 10.923 9.77487C10.4639 9.8596 10.0551 10.0644 9.70391 10.3826C8.22421 11.7348 8.68788 18.9861 9.04454 20.1607C9.19452 20.6691 9.38841 21.0358 9.63259 21.2765C9.94718 21.5947 10.3779 21.8138 10.8727 21.9121C12.2582 22.1942 19.396 22.352 24.756 21.9544C25.2499 21.8697 25.687 21.6435 26.0318 21.3118C27.3999 19.965 27.3066 12.3065 26.211 10.6082Z"
+                                    d="M16.0178 18.2037V13.131C17.8468 13.9784 19.2634 14.797 20.9388 15.6795C19.557 16.434 17.8468 17.2806 16.0178 18.2037ZM26.211 10.6082C25.8955 10.1989 25.3578 9.88034 24.7853 9.77487C23.1026 9.46026 12.6048 9.45936 10.923 9.77487C10.4639 9.8596 10.0551 10.0644 9.70391 10.3826C8.22421 11.7348 8.68788 18.9861 9.04454 20.1607C9.19452 20.6691 9.38841 21.0358 9.63259 21.2765C9.94718 21.5947 10.3779 21.8138 10.8727 21.9121C12.2582 22.1942 19.396 22.352 24.756 21.9544C25.2499 21.8697 25.687 21.6435 26.0318 21.3118C27.3999 19.965 27.3066 12.3065 26.211 10.6082Z"
                                     fill="#023A15" />
                             </svg>
                         </a>
